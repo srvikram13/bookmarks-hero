@@ -3,13 +3,15 @@
   "version": "1.1",
   "description": "A browser action with a popup dump of all bookmarks, including search, add, edit and delete.",
   "permissions": [
-    "bookmarks"
+    "bookmarks",
+    "tabs"
   ],
   "browser_action": {
-      "default_title": "My Bookmarks",
-      "default_icon": "icon.png",
-      "default_popup": "popup.html"
+      "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
   },
   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'sha256-pTkm9sGCp46SpDGtVvhDeGZ9/ljKqyEWv81rsIIqmDs=' https://ajax.googleapis.com; object-src 'self'"
 }
