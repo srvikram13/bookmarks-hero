@@ -13,5 +13,5 @@
     "scripts": ["background.js"]
   },
   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'sha256-pTkm9sGCp46SpDGtVvhDeGZ9/ljKqyEWv81rsIIqmDs=' https://ajax.googleapis.com; object-src 'self'"
 }
